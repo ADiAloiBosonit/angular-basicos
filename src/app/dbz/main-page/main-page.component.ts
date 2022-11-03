@@ -14,14 +14,6 @@ export class MainPageComponent {
     poder: 1000
   }
 
-  get personajes(): Personaje[]{
-    return this.dbzService.personajes;
-  }
-  agregarNuevoPersonaje(argumento: Personaje) {
-    this.personajes.push(argumento);
-  }
-
-  constructor(private dbzService: DbzService) {
-  }
+  constructor() { }
 
 }
